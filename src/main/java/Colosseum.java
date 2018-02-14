@@ -35,7 +35,6 @@ public class Colosseum {
      * Useful functions: next(), nextInt() .
      */
     static Scanner myScan;
-
     /**
      * How we will build our Pokemon to battle.
      * <p>
@@ -73,9 +72,12 @@ public class Colosseum {
      */
     public static Pokemon buildPokemon() {
         Pokemon tempPokemon = new Pokemon();
+        Scanner HP = new Scanner(System.in);
+        System.out.println("What is your Hit Point?");
+        tempPokemon.hitPoints = HP.nextInt();
+        System.out.println("What is your defense")
         return tempPokemon;
     }
-
     /**
      * Prints who is ahead.
      * <p>
